@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="jp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Processing</title>
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+    <!--ホームに帰るためのボタン-->
+    <logotohome>
+    <a href="index.html"><img src="images/IMG_4892.JPG" alt=""></a>
+    </logotohome>
+
+    <!--h1は見出し１（大見出し）-->
+    <h1>【Processing】</h1>
+    
+    <h2>［メモ］</h2>
+    
+    <h3>◎method</h3>
+    
+    <p>
+        <a href="https://processing.org/reference/" target="_blank">methodの一覧</a><br>
+        <br>
+        ・size：表示ウィンドウの大きさを指定できる<br>
+        ・line：線分を描く（始点x、始点y、終点x、終点y）<br>
+        ・rect：四角形を描く<br>
+        ・rectMode：描写モードを設定できる（パラメータの描き方を変えることができる）<br>
+        ⑴ CORNER（左上x座標、左上y座標、横幅、縦幅）<br>
+        ⑵ CORNERS：四隅の座標を直接指定する（左上x座標、左上y座標、右下x座標、右下y座標）<br>
+        ⑶ CENTER（中心座標x、y、横幅、縦幅）<br>
+        ⑷ RADIUS（中心座標x、y、横幅の半分、縦幅の半分）<br>
+        ・ellipse：円を描く<br>
+        ・ellipseMode：円のパラメータの描き方を変えることができる）<br>
+        ・frameRate：一秒間に描画メソッドを呼び出す回数<br>
+        →パラメータを変えると速さが変わる<br>
+    </p>
+    <br>
+    
+    <h3>◎色の表現</h3>
+    
+    <p>
+        ・RGB空間とHSB空間<br>
+        ⑴ RGB（Red、Green、Blue）<br>
+        一色につき256段階まで指定することができる<br>
+        ⑵ HSB（Hue（色相）、Saturation（彩度）、Brightness（明度））<br>
+        色相：0-360までの指定、0=赤、120=緑、240=青<br>
+        彩度：0-100までの指定<br>
+        明度：0-100までの指定<br>
+        <br>
+        ⑶ HLS空間（HSB空間に類似）<br>
+        <br>
+        ・これらを使うときのmethod：colorMode<br>
+        【colorMode(RGB,100);】で赤青緑の度合いを設定することもできる<br>
+        この場合、赤青緑は0-99のまでの指定範囲となる<br>
+        <br>
+        ・透明度の指定：0-100（一番最後に入力）<br>
+        <br>
+        ・塗りつぶしのmethod：fill<br>
+        ・背景のmethod：background<br>
+        ・線のmethod：stroke<br>
+    </p>
+    <br>
+    
+    <h3>◎変数</h3>
+    
+    <p>
+        ・型：変数に入れられる値の種類を定めるもの<br>
+        ⑴ boolean（論理値型）<br>
+        ⑵ int（整数型）<br>
+        ⑶ long（倍長整数型）<br>
+        ⑷ float（実数型）<br>
+        ⑸ double（倍精度実数型）<br>
+        ⑹ byte（バイト型）<br>
+        ⑺ char（文字型）<br>
+        ⑻ color（色型）<br>
+    
+    </p>
+    <br>
+    
+    <h3>◎while文</h3>
+    
+    <p>
+        ・while文で繰り返し処理を行うことができる<br>
+        
+    </p>
+    <br>
+    
+    
+    <h3>◎連続モード</h3>
+    <p>
+        ・物体を動いているように見せるには、その物体を消してから<br>
+        次の物体を描くということの繰り返しである<br>
+        →連続モードというプログラミングスタイルを使う<br>
+        <br>
+        【void setup()<br>
+        {初期化コード}<br>
+        <br>
+        void draw()<br>
+        {画面描画コード}】<br>
+        <br>
+        ・setup：一度だけ実行させたいコード<br>
+        ・draw：繰り返したいコード<br>
+    </p>
+    
+    
+</body>
